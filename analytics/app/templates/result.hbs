@@ -1,0 +1,34 @@
+<div class="text-center col-md-8 col-md-offset-2">
+  {{#md-card title="Meghana Foods"
+      titleClass="orange-text"}}
+
+      {{#md-card-content}}
+          {{ember-chart 
+            type='Bar' 
+            data=data1
+            options=options1
+            width=800
+            height=300
+          }}
+      {{/md-card-content}}
+
+  {{/md-card}}
+</div>
+
+<div class="text-center col-md-8 col-md-offset-2">
+  {{#md-card}}
+
+      {{#md-card-content}}
+          {{ember-chart 
+            type='Pie' 
+            data=data2
+            options=options2
+            width=800
+            height=300
+          }}
+      {{/md-card-content}}
+
+  {{/md-card}}
+</div>
+
+{{outlet}}
